@@ -1,0 +1,344 @@
+import java.util.Scanner;
+//Scanner being imported
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner Qeustions = new Scanner(System.in);
+    //declaring my scanner
+    try
+      {
+      //try for later closing the scanner
+      String Answers;
+      int decider = 0;
+      String Didgit1="0";
+      String Didgit2="0";
+      String Didgit3="0";
+      String Didgit4="0";
+      String Didgit5="0";
+      String Didgit6="0";
+      String Didgit7="0";
+      String Didgit8="0";
+      int didgit1=0;
+      int didgit2=0;
+      int didgit3=0;
+      int didgit4=0;
+      int didgit5=0;
+      int didgit6=0;
+      int didgit7=0;
+      int didgit8=0;
+      //my variables
+      System.out.println("How many characters will be in your hexideciaml?");
+      Answers = Qeustions.nextLine();
+      Answers = Answers.toLowerCase();
+      System.out.println("What charecters would you like to convert to a number?(put them in order from left to right with a space in between each, and DO NOT TYPE OUT THE NUMBERS NAME JUST USE THE SYMBOL)");
+      if (Answers.equals("one")||Answers.equals("1"))
+      {
+        System.out.println("Why? That's lame as heck, fr fr man just do that yourself. A=10, B=11, C=12, D=13, E=14, and F=15. AND OBVIOUSLY 1=1, 2=2, 3=3, 4=4, 5=5, 6=6, 7=7, and 9=9.");
+      }
+      else if (Answers.equals("two")||Answers.equals("2"))
+      {
+        decider=2;
+        Didgit1 = Qeustions.next();
+        Didgit2 = Qeustions.next();
+      }
+      else if (Answers.equals("three")||Answers.equals("3"))
+      {
+        decider=3;
+        Didgit1 = Qeustions.next();
+        Didgit2 = Qeustions.next();
+        Didgit3 = Qeustions.next();
+      }
+      else if (Answers.equals("four")||Answers.equals("4"))
+      {
+        decider=4;
+        Didgit1 = Qeustions.next();
+        Didgit2 = Qeustions.next();
+        Didgit3 = Qeustions.next();
+        Didgit4 = Qeustions.next();
+      }
+      else if (Answers.equals("five")||Answers.equals("5"))
+      {
+        decider=5;
+        Didgit1 = Qeustions.next();
+        Didgit2 = Qeustions.next();
+        Didgit3 = Qeustions.next();
+        Didgit4 = Qeustions.next();
+        Didgit5 = Qeustions.next();
+      }
+      else if (Answers.equals("six")||Answers.equals("6"))
+      {
+        decider=6;
+        Didgit1 = Qeustions.next();
+        Didgit2 = Qeustions.next();
+        Didgit3 = Qeustions.next();
+        Didgit4 = Qeustions.next();
+        Didgit5 = Qeustions.next();
+        Didgit6 = Qeustions.next();
+      }
+      else if (Answers.equals("seven")||Answers.equals("7"))
+      {
+        decider=7;
+        Didgit1 = Qeustions.next();
+        Didgit2 = Qeustions.next();
+        Didgit3 = Qeustions.next();
+        Didgit4 = Qeustions.next();
+        Didgit5 = Qeustions.next();
+        Didgit6 = Qeustions.next();
+        Didgit7 = Qeustions.next();
+      }
+      else if (Answers.equals("eight")||Answers.equals("8"))
+      {
+        decider=8;
+        Didgit1 = Qeustions.next();
+        Didgit2 = Qeustions.next();
+        Didgit3 = Qeustions.next();
+        Didgit4 = Qeustions.next();
+        Didgit5 = Qeustions.next();
+        Didgit6 = Qeustions.next();
+        Didgit7 = Qeustions.next();
+        Didgit8 = Qeustions.next();
+      }
+      //from line 31 to 101, it is asking for user input so it knows how many charecters there will be, and so it knows what they are
+      if (Didgit1.equals("a"))
+      {
+        Didgit1 = "10";
+      }
+      else if (Didgit1.equals("b"))
+      {
+        Didgit1 = "11";
+      }
+      else if (Didgit1.equals("c"))
+      {
+        Didgit1 = "12";
+      }
+      else if (Didgit1.equals("d"))
+      {
+        Didgit1 = "13";
+      }
+      else if (Didgit1.equals("e"))
+      {
+        Didgit1 = "14";
+      }
+      else if (Didgit1.equals("f"))
+      {
+        Didgit1 = "15";
+      }
+      if (Didgit2.equals("a"))
+      {
+        Didgit2 = "10";
+      }
+      else if (Didgit2.equals("b"))
+      {
+        Didgit2 = "11";
+      }
+      else if (Didgit2.equals("c"))
+      {
+        Didgit2 = "12";
+      }
+      else if (Didgit2.equals("d"))
+      {
+        Didgit2 = "13";
+      }
+      else if (Didgit2.equals("e"))
+      {
+        Didgit2 = "14";
+      }
+      else if (Didgit2.equals("f"))
+      {
+        Didgit2 = "15";
+      }
+      didgit1 = Integer.parseInt(Didgit1);
+      didgit2 = Integer.parseInt(Didgit2);
+      // from 103 to 152 converts letters a-f to their corresponding numbers(only for Didgit1 and Didgit2), and converts the variable Didgit1 and Didgit2 to integers from Strings
+      if (decider==2)
+      {
+        System.out.println(didgit1 * Math.pow (16, 1) + didgit2 * Math.pow (16, 0));
+      }
+      if (Didgit3.equals("a"))
+      {
+        Didgit3 = "10";
+      }
+      else if (Didgit3.equals("b"))
+      {
+        Didgit3 = "11";
+      }
+      else if (Didgit3.equals("c"))
+      {
+        Didgit3 = "12";
+      }
+      else if (Didgit3.equals("d"))
+      {
+        Didgit3 = "13";
+      }
+      else if (Didgit3.equals("e"))
+      {
+        Didgit3 = "14";
+      }
+      else if (Didgit3.equals("f"))
+      {
+        Didgit3 = "15";
+      }
+      didgit3 = Integer.parseInt(Didgit3);
+      // from 158 to 182 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
+      if (decider==3)
+      {
+        System.out.println(didgit1 * Math.pow (16, 2) + didgit2 * Math.pow (16, 1) + didgit3 * Math.pow (16, 0));
+      }
+      if (Didgit4.equals("a"))
+      {
+        Didgit4 = "10";
+      }
+      else if (Didgit4.equals("b"))
+      {
+        Didgit4 = "11";
+      }
+      else if (Didgit4.equals("c"))
+      {
+        Didgit4 = "12";
+      }
+      else if (Didgit4.equals("d"))
+      {
+        Didgit4 = "13";
+      }
+      else if (Didgit4.equals("e"))
+      {
+        Didgit4 = "14";
+      }
+      else if (Didgit4.equals("f"))
+      {
+        Didgit4 = "15";
+      }
+      didgit4 = Integer.parseInt(Didgit3);
+      // from 188 to 212 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
+      if (decider==4)
+      {
+        System.out.println(didgit1 * Math.pow (16, 3) + didgit2 * Math.pow (16, 2) + didgit3 * Math.pow (16, 1) + didgit4 * Math.pow (16, 0));
+      }
+      if (Didgit5.equals("a"))
+      {
+        Didgit5 = "10";
+      }
+      else if (Didgit5.equals("b"))
+      {
+        Didgit5 = "11";
+      }
+      else if (Didgit5.equals("c"))
+      {
+        Didgit5 = "12";
+      }
+      else if (Didgit5.equals("d"))
+      {
+        Didgit5 = "13";
+      }
+      else if (Didgit5.equals("e"))
+      {
+        Didgit5 = "14";
+      }
+      else if (Didgit5.equals("f"))
+      {
+        Didgit5 = "15";
+      }
+      didgit5 = Integer.parseInt(Didgit3);
+      // from 218 to 242 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
+      if (decider==5)
+      {
+        System.out.println(didgit1 * Math.pow (16, 4) + didgit2 * Math.pow (16, 3) + didgit3 * Math.pow (16, 2) + didgit4 * Math.pow (16, 1) + didgit5 * Math.pow (16, 0));
+      }
+      if (Didgit6.equals("a"))
+      {
+        Didgit6 = "10";
+      }
+      else if (Didgit6.equals("b"))
+      {
+        Didgit6 = "11";
+      }
+      else if (Didgit6.equals("c"))
+      {
+        Didgit6 = "12";
+      }
+      else if (Didgit6.equals("d"))
+      {
+        Didgit6 = "13";
+      }
+      else if (Didgit6.equals("e"))
+      {
+        Didgit6 = "14";
+      }
+      else if (Didgit6.equals("f"))
+      {
+        Didgit6 = "15";
+      }
+      didgit6 = Integer.parseInt(Didgit3);
+      // from 248 to 272 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
+      if (decider==6)
+      {
+        System.out.println(didgit1 * Math.pow (16, 5) + didgit2 * Math.pow (16, 4) + didgit3 * Math.pow (16, 3) + didgit4 * Math.pow (16, 2) + didgit5 * Math.pow (16, 1) + didgit6 * Math.pow (16, 0));
+      }
+      if (Didgit7.equals("a"))
+      {
+        Didgit7 = "10";
+      }
+      else if (Didgit7.equals("b"))
+      {
+        Didgit7 = "11";
+      }
+      else if (Didgit7.equals("c"))
+      {
+        Didgit7 = "12";
+      }
+      else if (Didgit7.equals("d"))
+      {
+        Didgit7 = "13";
+      }
+      else if (Didgit7.equals("e"))
+      {
+        Didgit7 = "14";
+      }
+      else if (Didgit7.equals("f"))
+      {
+        Didgit7 = "15";
+      }
+      didgit7 = Integer.parseInt(Didgit3);
+      // from 278 to 302 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
+      if (decider==7)
+      {
+        System.out.println(didgit1 * Math.pow (16, 6) + didgit2 * Math.pow (16, 5) + didgit3 * Math.pow (16, 4) + didgit4 * Math.pow (16, 3) + didgit5 * Math.pow (16, 2) + didgit6 * Math.pow (16, 1) + didgit7 * Math.pow (16, 0));
+      }
+      if (Didgit8.equals("a"))
+      {
+        Didgit8 = "10";
+      }
+      else if (Didgit8.equals("b"))
+      {
+        Didgit8 = "11";
+      }
+      else if (Didgit8.equals("c"))
+      {
+        Didgit8 = "12";
+      }
+      else if (Didgit8.equals("d"))
+      {
+        Didgit8 = "13";
+      }
+      else if (Didgit8.equals("e"))
+      {
+        Didgit8 = "14";
+      }
+      else if (Didgit8.equals("f"))
+      {
+        Didgit8 = "15";
+      }
+      didgit8 = Integer.parseInt(Didgit3);
+      // from 308 to 333 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
+      if (decider==8)
+      {
+        System.out.println(didgit1 * Math.pow (16, 7) + didgit2 * Math.pow (16, 6) + didgit3 * Math.pow (16, 5) + didgit4 * Math.pow (16, 4) + didgit5 * Math.pow (16, 3) + didgit6 * Math.pow (16, 2) + didgit7 * Math.pow (16, 1) + didgit8 * Math.pow (16, 0));
+      }
+    } 
+    finally 
+      {
+      Qeustions.close();//this is the scanner closing
+    }
+  }
+}
