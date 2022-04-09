@@ -28,7 +28,7 @@ class Main
       int didgit7=0;
       int didgit8=0;
       //my variables
-      System.out.println("How many characters will be in your hexideciaml?");
+      System.out.println("How many characters will be in your hexideciaml?(1-8)");
       Answers = Qeustions.nextLine();
       Answers = Answers.toLowerCase();
       System.out.println("What charecters would you like to convert to a number?(put them in order from left to right with a space in between each, and DO NOT TYPE OUT THE NUMBERS NAME JUST USE THE SYMBOL)");
