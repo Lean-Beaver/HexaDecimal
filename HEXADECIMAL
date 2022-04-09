@@ -209,7 +209,7 @@ class Main
       {
         Didgit4 = "15";
       }
-      didgit4 = Integer.parseInt(Didgit3);
+      didgit4 = Integer.parseInt(Didgit4);
       // from 188 to 212 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
       if (decider==4)
       {
@@ -239,7 +239,7 @@ class Main
       {
         Didgit5 = "15";
       }
-      didgit5 = Integer.parseInt(Didgit3);
+      didgit5 = Integer.parseInt(Didgit5);
       // from 218 to 242 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
       if (decider==5)
       {
@@ -269,7 +269,7 @@ class Main
       {
         Didgit6 = "15";
       }
-      didgit6 = Integer.parseInt(Didgit3);
+      didgit6 = Integer.parseInt(Didgit6);
       // from 248 to 272 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
       if (decider==6)
       {
@@ -299,7 +299,7 @@ class Main
       {
         Didgit7 = "15";
       }
-      didgit7 = Integer.parseInt(Didgit3);
+      didgit7 = Integer.parseInt(Didgit7);
       // from 278 to 302 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
       if (decider==7)
       {
@@ -329,7 +329,7 @@ class Main
       {
         Didgit8 = "15";
       }
-      didgit8 = Integer.parseInt(Didgit3);
+      didgit8 = Integer.parseInt(Didgit8);
       // from 308 to 333 converts letters a-f to their corresponding numbers(only for Didgit3 this time), and converts the variable Didgit3 to an integer from a String
       if (decider==8)
       {
